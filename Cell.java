@@ -1,6 +1,6 @@
 public class Cell {
 
-	
+
 	private int x;
 	private int y;
 	private char value;
@@ -8,16 +8,16 @@ public class Cell {
 
 	public Cell()
 	{
-		
+
 	}
-	
+
 	public Cell(int x, int y)
 	{
 		this.x = x;
 		this.y = y;
 		isTracked = false;
 	}
-	
+
 	public Cell(int x, int y, char value)
 	{
 		this.x = x;
@@ -53,5 +53,9 @@ public class Cell {
 	public void setValue(char value) {
 		this.value = value;
 	}
-	
 
+	public String toString() {
+		return Character.toString(value);
+	}
+
+}

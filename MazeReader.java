@@ -10,8 +10,8 @@ public class MazeReader {
 	private ArrayList<ArrayList<Cell>> Cells = new ArrayList();
 	private Cell start;
 
-	private int width = 0;
-	private int height = 0;
+	private static int width = 0;
+	private static int height = 0;
 
 	private File maze1;
 	private File maze2;
@@ -20,7 +20,7 @@ public class MazeReader {
 	private String MAZE_1 = "maze-1.txt";
 	private String MAZE_2 = "maze-2.txt";
 
-	public Maze() {
+	public MazeReader() {
 
 		//	set up the File
 		try {
@@ -61,6 +61,10 @@ public class MazeReader {
 
 	}
 
+	public String toString(int x, int y) {
+		return Cells.get(x).get(y).toString();
+	}
+
 
 	//	Prints the maze
 	public void PrintMaze() {
@@ -71,4 +75,20 @@ public class MazeReader {
 			System.out.println();
 		}
 	}
+
+	//	Get the height of the maze
+	public static int getHeight() {
+		return height;
+	}
+
+	/**
+	*
+	*
+	*/
+	public static int getWidth() {
+		return width;
+	}
+
+
+
 }
