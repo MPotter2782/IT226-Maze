@@ -1,11 +1,11 @@
-
 public class Cell {
 
 	
 	private int x;
 	private int y;
 	private char value;
-	
+	private boolean isTracked;
+
 	public Cell()
 	{
 		
@@ -15,6 +15,7 @@ public class Cell {
 	{
 		this.x = x;
 		this.y = y;
+		isTracked = false;
 	}
 	
 	public Cell(int x, int y, char value)
@@ -26,6 +27,11 @@ public class Cell {
 
 	public int getX() {
 		return x;
+	}
+
+	public void getsTracked()
+	{
+		isTracked = true;
 	}
 
 	public void setX(int x) {
@@ -48,4 +54,4 @@ public class Cell {
 		this.value = value;
 	}
 	
-}
+
