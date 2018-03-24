@@ -5,6 +5,7 @@ import java.io.File;
 
 public class Maze {
 
+	//	Maybe unused
 	private String mazeRawData;
 
 	private ArrayList<ArrayList<Cell>> Cells = new ArrayList();
@@ -72,6 +73,8 @@ public class Maze {
 		}
 	}
 
+
+	
 	/*
 	 * Locates the starting position and assigns it tot he start variable.
 	 */
