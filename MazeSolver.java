@@ -44,36 +44,22 @@ public class MazeSolver {
 			solve(x-1,y);
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public boolean hasStart(Maze m)
+	{
+		boolean start = false;
+		for(int i = 0; i < m.length; i++)
+			for(int j = 0; j < m[].length; j++)
+			{
+				if(maze[i][j].getValue() == 'o')
+					start == true;
+			}
+		}
+		return start;
+	}
 	
 }
