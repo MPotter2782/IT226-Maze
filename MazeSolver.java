@@ -73,6 +73,19 @@ public class MazeSolver {
 		return end;
 	}
 
+	public int countEnds(Maze maze)
+	{
+		int count == 0;
+		for(int i = 0; i < maze.length; i++)
+			for(int j = 0; j < maze[].length; j++)
+			{
+				if(maze[i][j].getValue() == '*')
+					count++;
+			}
+		}
+		return end;
+	}
+
 
 	
 }
