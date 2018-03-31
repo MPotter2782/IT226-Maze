@@ -46,46 +46,4 @@ public class MazeSolver {
 		
 	}
 	
-	
-	public boolean hasStart(Maze maze)
-	{
-		boolean start = false;
-		for(int i = 0; i < maze.length; i++)
-			for(int j = 0; j < maze[].length; j++)
-			{
-				if(maze[i][j].getValue() == 'o')
-					start == true;
-			}
-		}
-		return start;
-	}
-
-	public boolean hasEnd(Maze maze)
-	{
-		boolean end = false;
-		for(int i = 0; i < maze.length; i++)
-			for(int j = 0; j < maze[].length; j++)
-			{
-				if(maze[i][j].getValue() == '*')
-					end == true;
-			}
-		}
-		return end;
-	}
-
-	public int countEnds(Maze maze)
-	{
-		int count == 0;
-		for(int i = 0; i < maze.length; i++)
-			for(int j = 0; j < maze[].length; j++)
-			{
-				if(maze[i][j].getValue() == '*')
-					count++;
-			}
-		}
-		return end;
-	}
-
-
-	
 }
