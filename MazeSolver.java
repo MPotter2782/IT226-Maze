@@ -47,13 +47,11 @@ public class MazeSolver {
 	}
 	
 	
-	
-	
-	public boolean hasStart(Maze m)
+	public boolean hasStart(Maze maze)
 	{
 		boolean start = false;
-		for(int i = 0; i < m.length; i++)
-			for(int j = 0; j < m[].length; j++)
+		for(int i = 0; i < maze.length; i++)
+			for(int j = 0; j < maze[].length; j++)
 			{
 				if(maze[i][j].getValue() == 'o')
 					start == true;
@@ -61,5 +59,20 @@ public class MazeSolver {
 		}
 		return start;
 	}
+
+	public boolean hasEnd(Maze maze)
+	{
+		boolean end = false;
+		for(int i = 0; i < maze.length; i++)
+			for(int j = 0; j < maze[].length; j++)
+			{
+				if(maze[i][j].getValue() == '*')
+					end == true;
+			}
+		}
+		return end;
+	}
+
+
 	
 }
