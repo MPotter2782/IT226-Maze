@@ -89,6 +89,19 @@ public class MazeReader {
 		return width;
 	}
 
+	public int countEnds()
+	{
+		int count = 0;
+		for(int i = 0; i < Cells.size() ; i++)
+			for(int j = 0; j < Cells.get(i).size(); j++)
+			{
+				if(Cells.get(x).get(y).getValue() == '*')
+					count++;
+			}
+		}
+		return count;
+	}
+
 
 
 }
